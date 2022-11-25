@@ -21,7 +21,7 @@ module alu
       4'd4: out <= a << b;      // SHL.
       4'd5: out <= a >> b;      // SHR.
       4'd6: out <= a / b;       // DIV.
-      4'd7: out <= ~a           // NOT.
+      4'd7: out <= ~a;          // NOT.
       default: out <= a + b;
     endcase
   end
